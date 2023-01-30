@@ -1,0 +1,106 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.containerHeader, .containerFooter  {
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    grid-column: 1/3;
+}
+
+.menu {
+    grid-column: 7/9;
+}
+
+.containerMain {
+    grid-gap: 5px;
+    grid-template-rows: 150px 150px 150px 150px;
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url(./assets/item-one.jpeg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img2 {
+    background-image: url(./assets/item-two.jpeg);
+    grid-column: 1/2;
+    grid-column: 2 / 3;
+}
+
+.img3 {
+    background-image: url(./assets/item-three.jpeg);
+    grid-row: 4 / 5;
+    grid-column: 7/8;
+
+}
+
+.img4 {
+    background-image: url(./assets/item-four.jpeg);
+    grid-row: 3/4;
+    grid-column: 6/7;
+}
+
+.img5 {
+    background-image: url(./assets/item-five.jpeg);
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.img6 {
+    background-image: url(./assets/item-six.jpeg);
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.img7 {
+    background-image: url(./assets/item-seven.jpeg);
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+.img8 {
+    background-image: url(./assets/item-eight.jpeg);
+    grid-row: 3 / span 4;
+    grid-column: 1 / span 2;
+}
+
+.img9 {
+    background-image: url(./assets/item-nine.jpeg);
+    grid-row: 1/ span 2;
+    grid-column: 7/ span 8;
+}
+
+.text {
+    color: red;
+    font-size: 90px;
+    position: absolute;
+    top: 140px;
+    left: 470px;
+    z-index: 100;
+}
+
+.stadt {
+    font-size: 20px;
+    font-weight: 700;
+    grid-column: 1/5;
+}
+
+.dci {
+    font-size: 20px;
+    grid-column: 6/8;
+}
